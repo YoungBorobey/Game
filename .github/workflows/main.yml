@@ -1,0 +1,29 @@
+name: Build
+
+on: [push, pull_request]
+
+jobs:   
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: bld
+        run: make  
+      - name: save_bld
+        uses: actions/upload-artifact@v2
+        with: 
+            name: Build_For_Linux
+            path: main.out
+  build_win:
+    name: windows_build
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: win_bld
+        run: make win
+      - name: save_win_bld
+        uses: actions/upload-artifact@v2
+        with: 
+            name: Build_For_Windows
+            path: main.exe
