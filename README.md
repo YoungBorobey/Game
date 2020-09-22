@@ -1,6 +1,6 @@
 # Console game
-Download main.out or main.exe to play
-Also download directory 'res' with the map in it. You may change the map.map<br/> Also you can delete it and launch the game: new random map will be created
+Download main.out or main.exe to play <br/>
+Also download directory 'res' with the map in it. You may change the map.map <br/> Also you can delete it and launch the game: new random map will be created
 
 
 Possible enemies: rat, dog, wolf.
